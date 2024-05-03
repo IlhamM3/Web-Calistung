@@ -1,5 +1,7 @@
 <template>
-    <Menghitung/>
+    <div class="BG-cover">
+        <Menghitung/>
+    </div>
 </template>
 <script>
 import Menghitung from '@/components/Menghitung.vue';
