@@ -12,16 +12,16 @@
                 </button>
                 <div class="flex flex-wrap items-center justify-center gap-10 mt-10">
                     <button
-                        class="px-6 py-3 mb-2 text-sm text-3xl font-medium font-bold text-center text-white rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"
+                        class="px-6 py-3 mb-2 text-sm text-xl font-medium font-bold text-center text-white rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"
                         @click="selectOperator('+')">Penjumlahan(+)</button>
                     <button
-                        class="px-6 py-3 mb-2 text-sm text-3xl font-medium font-bold text-center text-white rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"
+                        class="px-6 py-3 mb-2 text-sm text-xl font-medium font-bold text-center text-white rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"
                         @click="selectOperator('-')">Pengurangan(-)</button>
                     <button
-                        class="py-3 mb-2 text-sm text-3xl font-medium font-bold text-center text-white rounded-lg px-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"
+                        class="px-10 py-3 mb-2 text-sm text-xl font-medium font-bold text-center text-white rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"
                         @click="selectOperator('*')">Perkalian(x)</button>
                     <button
-                        class="px-10 py-3 mb-2 text-sm text-3xl font-medium font-bold text-center text-white rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"
+                        class="px-8 py-3 mb-2 text-sm text-xl font-medium font-bold text-center text-white rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"
                         @click="selectOperator('/')">Pembagian(:)</button>
                 </div>
             </div>
