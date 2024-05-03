@@ -89,7 +89,7 @@ export default {
                     await this.speakString(part.text);
                     // Add logic to change text size and color here
                     part.active = false; // Set the current part as inactive
-                    await this.delay(1000); // Delay for 0.5 second between captions
+                    await this.delay(700); // Delay for 0.5 second between captions
                 }
                 this.activeIndex = -1; // Reset activeIndex to its initial value after finishing reading
                 this.buttonEnabled = true; // Enable button after reading all captions
