@@ -1,5 +1,5 @@
 const DataMembaca = {
-    image: "@../src/assets/img/matahari.jpg",
+    image: "@/assets/img/matahari.jpg",
     caption: [
         {
             "text": "ma",
@@ -21,51 +21,51 @@ const DataMembaca = {
     imageShown: false,
     data: [
         {
-            "image": "../src/assets/img/api.jpg",
+            "image": "@/assets/img/api.jpg",
             "caption": ["a", "pi"]
         },
         {
-            "image": "../src/assets/img/baju.jpg",
+            "image": "@/assets/img/baju.jpg",
             "caption": ["ba", "ju"]
         },
         {
-            "image": "../src/assets/img/baso.jpg",
+            "image": "@/assets/img/baso.jpg",
             "caption": ["ba", "so"]
         },
         {
-            "image": "../src/assets/img/buku.jpg",
+            "image": "@/assets/img/buku.jpg",
             "caption": ["bu", "ku"]
         },
         {
-            "image": "../src/assets/img/kopi.jpg",
+            "image": "@/assets/img/kopi.jpg",
             "caption": ["ko", "pi"]
         },
         {
-            "image": "../src/assets/img/kuda.jpg",
+            "image": "@/assets/img/kuda.jpg",
             "caption": ["ku", "da"]
         },
         {
-            "image": "../src/assets/img/matahari.jpg",
+            "image": "@/assets/img/matahari.jpg",
             "caption": ["ma", "ta", "ha", "ri"]
         },
         {
-            "image": "../src/assets/img/petani.jpg",
+            "image": "@/assets/img/petani.jpg",
             "caption": ["pe", "ta", "ni"]
         },
         {
-            "image": "../src/assets/img/rusa.jpg",
+            "image": "@/assets/img/rusa.jpg",
             "caption": ["ru", "sa"]
         },
         {
-            "image": "../src/assets/img/sapi.jpg",
+            "image": "@/assets/img/sapi.jpg",
             "caption": ["sa", "pi"]
         },
         {
-            "image": "../src/assets/img/susu.jpg",
+            "image": "@/assets/img/susu.jpg",
             "caption": ["su", "su"]
         },
         {
-            "image": "../src/assets/img/topi.jpg",
+            "image": "@/assets/img/topi.jpg",
             "caption": ["to", "pi"]
         },
     ]
