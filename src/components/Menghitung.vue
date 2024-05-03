@@ -79,6 +79,9 @@
             </div>
         </div>
     </div>
+    <audio id="audio" loop autoplay>
+        <source src="@/assets/sound/lofi.mp3" type="audio/mp3">
+    </audio>
 </template>
 
 <script>
