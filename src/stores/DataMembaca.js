@@ -1,23 +1,4 @@
 const DataMembaca = {
-    image: "@/assets/img/matahari.jpg",
-    caption: [
-        {
-            "text": "ma",
-            "active": false
-        },
-        {
-            "text": "ta",
-            "active": false
-        },
-        {
-            "text": "ha",
-            "active": false
-        },
-        {
-            "text": "ri",
-            "active": false
-        },
-    ],
     imageShown: false,
     data: [
         {
