@@ -2,7 +2,7 @@ const DataMembaca = {
     imageShown: false,
     data: [
         {
-            "image": "https://cdn.discordapp.com/attachments/1164780967274217542/1235961443824701500/api.jpg?ex=6636464b&is=6634f4cb&hm=a3353e61c95c56e64143c563dc8151ff2edddce6f53d423ac7a998a4cd3f56b0&",
+            "image": "https://drive.google.com/file/d/1wb4tWazMst65Mfxnub6qW73TyOOookiR/preview",
             "caption": ["a", "pi"]
         },
         {

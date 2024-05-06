@@ -103,6 +103,8 @@ export default {
     },
     mounted() {
         this.loadData();
+        const audio = document.getElementById('audio');
+        audio.volume = 0.5;
     },
     methods: {
         goBack() {
@@ -118,6 +120,9 @@ export default {
         selectOperator(operator) {
             this.operator = operator;
             this.checkVariable = false;
+            const audio = document.getElementById('audio');
+            audio.play();
+            audio.volume = 0.5;
         },
         async loadData() {
             try {
@@ -146,10 +151,19 @@ export default {
             if (parseInt(this.answer) === expectedAnswer) {
                 this.message = true;
                 const audiobenar = document.getElementById('benaraudio');
+                audiobenar.play();
                 setTimeout(() => {
                     this.message = false;
+                    this.currentIndex++;
+                    if (this.currentIndex >= DataHitung.data.length) {
+                        this.currentIndex = 0;
+                    }
+                    this.currentQuestion = DataHitung.data[this.currentIndex];
+                    this.showResult = false;
+                    this.answer = '';
+                    this.resultMessage = '';
                 }, 8000);
-                audiobenar.play();
+
 
             } else if (this.answer === '') {
                 this.resultMessage = 'Isikan Jawaban Terlebih Dahulu';
