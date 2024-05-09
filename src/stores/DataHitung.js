@@ -13,7 +13,7 @@ const DataHitung = {
         },
         {
             id: 3,
-            a: 12,
+            a: 2,
             b: 3,
         },
         {
@@ -33,7 +33,7 @@ const DataHitung = {
         },
         {
             id: 7,
-            a: 10,
+            a: 8,
             b: 8,
         },
         {
@@ -48,9 +48,37 @@ const DataHitung = {
         },
         {
             id: 10,
-            a: 15,
-            b: 11,
+            a: 3,
+            b: 5,
         }
     ]
+};
+
+// Fungsi untuk menghasilkan data acak
+function generateRandomData() {
+    const newData = [];
+    const existingIds = new Set(DataHitung.data.map(item => item.id));
+
+    for (let i = 1; i <= 20; i++) {
+        let randomA = Math.floor(Math.random() * 10) + 1; // Nilai acak untuk a antara 1 hingga 10
+        let randomB = Math.floor(Math.random() * 10) + 1; // Nilai acak untuk b antara 1 hingga 10
+
+        // Jika nilai acak sudah ada, maka ambil nilai acak baru hingga unik
+        while (existingIds.has(i)) {
+            i++;
+        }
+
+        newData.push({
+            id: i,
+            a: randomA,
+            b: randomB,
+        });
+    }
+
+    return newData;
 }
+
+// Gabungkan data baru dengan data yang ada
+DataHitung.data = DataHitung.data.concat(generateRandomData());
+
 export default DataHitung;

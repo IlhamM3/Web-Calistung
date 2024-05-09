@@ -1,4 +1,5 @@
 <template>
+    <RouterLink to="/belajar/menulis"></RouterLink>
     <div class="flex items-center justify-center w-screen h-screen">
         <div class="bg-white rounded-xl w-[800px] h-[550px] p-10 relative">
             <button @click="goBack"
@@ -29,9 +30,11 @@
 
 <script>
 import DataMenulis from '@/stores/DataMenulis';
-import { createWorker } from 'tesseract.js';
-
+import { RouterLink } from 'vue-router'
 export default {
+    components: {
+        RouterLink
+    },
     data() {
         return {
             Menulis: [],
@@ -46,16 +49,6 @@ export default {
     },
     async mounted() {
         this.canvas();
-        const worker = await createWorker('eng');
-        const ret = await worker.recognize(this.Menulis);
-        console.log(ret.data.text);
-        console.log(ret.data.symbols)
-        const data = ret.data.symbols
-        data.forEach(data => {
-            console.log(data.text)
-
-        });
-        await worker.terminate();
     },
     methods: {
         goBack() {
@@ -140,7 +133,12 @@ export default {
         },
         toggleTool() {
             this.isEraser = !this.isEraser; // Mengubah status antara pensil dan penghapus
-        }
+        },
+        clearCanvas() {
+            let canvas = document.getElementById("canvas");
+            let ctx = canvas.getContext("2d");
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        },
     }
 }
 </script>

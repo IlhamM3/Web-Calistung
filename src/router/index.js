@@ -3,7 +3,6 @@ import MainMenu from '@/views/MainMenu.vue'
 import MembacaView from '@/views/MembacaView.vue'
 import MenghitungView from '@/views/MenghitungView.vue'
 import MenulisView from '@/views/MenulisView.vue'
-import NotFoundView from '@/views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,12 +26,7 @@ const router = createRouter({
       path: '/belajar/menulis',
       name: 'Belajar-Menulis',
       component: MenulisView
-    },
-    {
-      path: '/:catchAll(.*)',
-      name: 'notfound',
-      component: NotFoundView
-    },
+    }
   ]
 })
 
