@@ -1,5 +1,4 @@
 <template>
-    <RouterLink to="/belajar/menulis"></RouterLink>
     <div class="flex items-center justify-center w-screen h-screen">
         <div class="bg-white rounded-xl w-[350px] h-[630px] md:w-[1080px] md:h-[550px] p-5 md:p-10 relative">
             <button @click="goBack"
@@ -43,8 +42,9 @@
             <!-- Tombol dan hasil -->
             <div class="flex flex-row gap-2 mt-2 md:flex-col ">
                 <h3 class="hidden my-2 text-xl font-bold md:block">Mengatur ketebalan garis</h3>
-                <span class="w-56 py-1 text-base font-bold text-center text-white bg-blue-500 rounded-lg">Ketebalan
-                    Garis: {{ lineWidth }} %</span>
+                <div class="items-center w-56 py-1 text-base font-bold text-center text-white bg-blue-500 rounded-lg">
+                    <span>Ketebalan
+                        Garis: {{ lineWidth }} %</span></div>
                 <div class="flex gap-x">
                     <button @click="increaseLineWidth"
                         class="w-8 p-2 mb-2 text-sm text-base font-medium font-bold text-center text-white rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"><svg
@@ -70,6 +70,9 @@
             </div>
         </div>
     </div>
+    <audio id="audio" loop autoplay>
+        <source src="@/assets/sound/lofi.mp3" type="audio/mp3">
+    </audio>
 </template>
 
 <script>
