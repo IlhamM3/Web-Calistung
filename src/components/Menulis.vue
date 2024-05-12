@@ -44,7 +44,8 @@
                 <h3 class="hidden my-2 text-xl font-bold md:block">Mengatur ketebalan garis</h3>
                 <div class="items-center w-56 py-1 text-base font-bold text-center text-white bg-blue-500 rounded-lg">
                     <span>Ketebalan
-                        Garis: {{ lineWidth }} %</span></div>
+                        Garis: {{ lineWidth }} %</span>
+                </div>
                 <div class="flex gap-x">
                     <button @click="increaseLineWidth"
                         class="w-8 p-2 mb-2 text-sm text-base font-medium font-bold text-center text-white rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 me-2"><svg
@@ -187,7 +188,7 @@ export default {
             let canvas = document.getElementById("canvas");
             let ctx = canvas.getContext("2d");
             console.log(innerWidth)
-            if (window.innerWidth <= 400) {
+            if (window.innerWidth <= 550) {
                 canvas.width = 300; // Atur lebar canvas menjadi 150px
                 canvas.height = 310; // Atur tinggi canvas menjadi 200px
             } else {
