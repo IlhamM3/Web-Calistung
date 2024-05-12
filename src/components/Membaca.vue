@@ -111,7 +111,6 @@ export default {
             currentIndex: 0, // Variable untuk melacak indeks gambar saat ini
             activeIndex: -1,
             showdata: true,
-            DataText: [],
             lastClickedData: null,
             micIcon: true,
             TextHasil: '',
@@ -189,7 +188,6 @@ export default {
                 this.buttonEnabled = false; // Menonaktifkan tombol
                 const dataLength = Data.length;
                 const imageData = Data[this.currentIndex]; // Dapatkan data gambar berdasarkan currentIndex
-                console.log(imageData);
                 this.caption = imageData.caption.map(text => ({ text, active: false }));
                 this.imageShown = false;
                 await this.delay(500); // Jeda selama 1 detik sebelum menampilkan gambar baru

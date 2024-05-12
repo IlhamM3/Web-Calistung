@@ -1,5 +1,10 @@
 const DataMembaca = {
     imageShown: false,
+    dataawal: [
+        {
+            "caption": ["Hai"]
+        }
+    ],
     dataangka: [
         {
             "image": "",
